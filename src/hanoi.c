@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <math.h>
 
 #include "hanoi.h"
 
@@ -71,7 +70,7 @@ void hanoi_solve(STACK a, STACK b, STACK c, int n, HANOI hanoi) {
 		stack_push(c, disc);
 	} else {
 		n--;
-		
+
 		hanoi_solve(a, c, b, n, hanoi);
 		hanoi_solve(a, b, c, 1, hanoi);
 		hanoi_solve(b, a, c, n, hanoi);

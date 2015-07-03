@@ -76,7 +76,7 @@ STACK_TYPE stack_pop(STACK stack) {
 
 		free(element);
 
-		return element->data;
+		return data;
 	} else {
 		return NULL;
 	}
